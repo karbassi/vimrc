@@ -51,3 +51,8 @@ set noerrorbells
 " Got backspace?
 "set backspace=2
 
+" Shortcut to rapidly toggle `set list`
+nmap <leader>; :set list!<CR>
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬

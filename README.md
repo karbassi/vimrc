@@ -8,7 +8,11 @@ A bunch of configurations and plugins for vim.
 mv ~/.vim{,-bak}
 
 # Clone current repo
-git clone --recursive https://github.com/karbassi/vimrc.git ~/.vim
+git clone https://github.com/karbassi/vimrc.git ~/.vim
+
+# Run vim the first time and install the plugins.
+# This will load vim, inst all the plugins, then quit.
+vim -c "PlugInstall | qa"
 ```
 
 ## Contributing

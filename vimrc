@@ -1,6 +1,6 @@
-source ~/.vim/plugins.vim
-source ~/.vim/basic.vim
-source ~/.vim/extended.vim
+source $XDG_CONFIG_HOME/vim/basic.vim
+source $XDG_CONFIG_HOME/vim/plugins.vim
+source $XDG_CONFIG_HOME/vim/extended.vim
 
 " Watch for file changes
 set autoread
@@ -53,6 +53,9 @@ set noerrorbells
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>; :set list!<CR>
+
+" Touch file under <cursor>
+map <silent> <leader>cf :!touch <c-r><c-p><cr><cr>
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
